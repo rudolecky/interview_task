@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<title>Sreality Flats</title>
+</head>
+
+<body>
+    <table>
+        {% for flat in flats %}
+        <tr>
+            <th><h1>{{flat['title']}}</h1></th>
+            <th><img src={{flat['url']}}></th>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
